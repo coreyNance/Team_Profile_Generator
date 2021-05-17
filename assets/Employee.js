@@ -9,7 +9,7 @@ class Employee {
     
     }
 
-    getName(num) {
+    getName() {
         return this.name;
 
     }
