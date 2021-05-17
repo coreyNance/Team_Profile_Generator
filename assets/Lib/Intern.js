@@ -1,4 +1,4 @@
-let Employee = require('./Employee');
+let Employee = require('../Lib/Employee');
 
 
 class Intern extends Employee {

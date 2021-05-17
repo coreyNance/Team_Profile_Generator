@@ -1,6 +1,4 @@
 let inquirer = require('inquirer');
-let Employee = require('./Employee.js');
-let Manager = require('./Manager');
 const methods = require('./methods.js');
 
 let script = {};
@@ -101,4 +99,4 @@ module.exports.data = script;
 // THEN that GitHub profile opens in a new tab
 // WHEN I start the application
 // WHEN I decide to finish building my team
-// THEN I exit the application, and the HTML is generated
+// THEN I exit the application, and the HTML is generatedno
