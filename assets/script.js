@@ -34,16 +34,41 @@ script.enterEmployee = function () {
             type: 'input',
             message: 'What is the name of the new employee?',
             name: 'name',
+            validate: function(name) {
+                if (name !== '' && isNaN(name)) {
+                    return true;
+                }
+                else {
+                    console.log("     Please enter a valid name.");
+                }
+            }
         },
         {
             type: 'input',
             message: 'What is the ID number for the new employee',
             name: 'id',
+            validate: function(id) {
+                if (!isNaN(id)) {
+                    return true;
+                }
+                else {
+                    console.log("  Input has to be a number");
+                }
+            }
         },
         {
             type: 'input',
             message: 'What is the email for the new employee',
             name: 'email',
+            validate: function(email) {
+                if(email.includes('@') === true && email.includes('.') === true) {
+                    return true;
+                }
+                else {
+                    console.log("      Need to have an @ sign and or a . as in .com, .edu etc for an email.")
+                }
+            }
+    
         },
         {
             type: 'list',
