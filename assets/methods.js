@@ -21,6 +21,14 @@ methods.manager = function(employeeName, employeeId, employeeEmail) {
             type: 'input',
             message: 'What is the Office number?',
             name: 'officeNumber',
+            validate: function(officeNumber) {
+                if (!isNaN(officeNumber)) {
+                    return true;
+                }
+                else {
+                    console.log("    Input has to be a number");
+                }
+            }
         },
         {
             type: 'confirm',
@@ -66,6 +74,14 @@ methods.engineer = function(employeeName, employeeId, employeeEmail) {
             type: 'input',
             message: `What is the Engineer's github username?`,
             name: 'github',
+            validate: function(github) {
+                if(isNaN(github)) {
+                    return true;
+                }
+                else {
+                    console.log("    Please enter poper input.");
+                }
+            }
         },
         {
             type: 'confirm',
