@@ -1,7 +1,7 @@
-const Employee = require('../Employee');
-const Manager = require('../Manager');
-const Engineer = require('../Engineer');
-const Intern = require('../Intern');
+const Employee = require('../Lib/Employee');
+const Manager = require('../Lib/Manager');
+const Engineer = require('../Lib/Engineer');
+const Intern = require('../Lib/Intern');
 
 
 describe("Employee", () => {
